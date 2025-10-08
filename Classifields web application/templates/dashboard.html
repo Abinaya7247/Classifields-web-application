@@ -1,0 +1,7 @@
+<h2>Your Listings</h2>
+<a href="/new">Add New Listing</a>
+<ul>
+  {% for product in products %}
+    <li>{{ product.title }} - ₹{{ product.price }}</li>
+  {% endfor %}
+</ul>

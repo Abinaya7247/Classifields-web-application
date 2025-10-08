@@ -1,0 +1,7 @@
+<h1>Classifieds</h1>
+<a href="/login">Login</a> | <a href="/register">Register</a>
+<ul>
+  {% for product in products %}
+    <li><a href="/product/{{ product.id }}">{{ product.title }}</a> - ₹{{ product.price }}</li>
+  {% endfor %}
+</ul>
